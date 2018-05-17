@@ -14,7 +14,7 @@ class Dog
     id = row[0]
     name = row[1]
     grade = row[2]
-    self.new(id, name, grade)
+    self.new(id: id, name: name, grade: grade)
   end
 
   def self.create_table
@@ -71,5 +71,5 @@ class Dog
     result = DB[:conn].execute(sql, id)[0]
     Dog.new(result[0], result[1], result[2])
   end
-
+  
 end
