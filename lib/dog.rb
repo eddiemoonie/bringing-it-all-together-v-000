@@ -82,7 +82,4 @@ class Dog
 
   end
 
-  def update
-    sql = "UPDATE dogs S"
-
 end
